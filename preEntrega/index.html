@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCTOS-UNICOS.COM</title>
+  <link rel="stylesheet" href="entrega.css"> <!-- Enlace al CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="entrega.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>PRODUCTOS-UNICOS.COM</h1>
+  </header>
+
+ 
+  <nav>
+    <ul>
+      <li id="nav-inicio" class="active" onclick="MostrarSeccion('inicio')">Inicio</li>
+      <li id="nav-productos" onclick="MostrarSeccion('productos')">Productos</li>
+      <li id="nav-resenas" onclick="MostrarSeccion('resenas')">Resenas</li>
+      <li id="nav-contacto" onclick="MostrarSeccion('contacto')">Contacto</li>
+    </ul>
+  </nav>
+
+ 
+  <div class="contenido">
+
+    <div id="inicio" class="section active">
+      <h2>Inicio</h2>
+      <p>Bienvenido a esta pagina UNICA con productos UNICOS.</p>
+      <div id=" body-inicion" class="body-section inicio">
+        <body>
+
+            <h3>Bienvenido!</h3>
+            <p>En mi pagina van a pasar cosas asombrosas,
+            puedes comprar y vender productos, ver reseñas y unirte a nosotros mediante un formulario    
+            no muy lindo. En realidad no podes hacer nada de esto pero podes intentarlo.</p>
+            </p>
+
+        </body>
+      </div>
+    </div>
+    
+    <div id="productos" class="section">
+      <h2>Productos</h2>
+      <p>En esta sección se muestran los productos UNICOS y FABULOSOS que podes comprar.</p>
+      <div id=" body-productos" class="body-section productos">
+        <body>
+
+            <div class="productos-card">
+                <img src="imagenes/bobEsponja.jpeg" alt="Foto del producto Bob Esponja" class="productos-img">
+                <div class="productos-info">
+                  <h3>BOB ESPONJA</h3>
+                  <p>Si, podes comprar a bob esponja, que decir. Solo 
+                    en esta pagina web. No pierdas la oprtunidad.</p>
+                </div>
+              </div>
+          
+              <div class="productos-card">
+                <img src="imagenes/patricioFuerte.jpg" alt="Foto del producto" class="productos-img">
+                <div class="productos-info">
+                  <h3>PATRICIO ESTRELLA</h3>
+                  <p>La verdad es que pasados los años, uno puede contemplar esta serie y reconocer que
+                    particio era el personaje mas importante, gracioso y el alma del programa. No te quedes sin 
+                tu Patricio, compralo YA.</p>
+                </div>
+              </div>
+            
+        </body>
+      </div>
+    </div>
+
+    <div id="resenas" class="section resenas">
+        <h2>Reseñas</h2>
+        <p>Lee lo que opinan nuestros clientes REALES sobre estos productos increíbles y UNICOS...</p>
+        <div class="reseñas-grid">
+          <div class="reseña-card">
+            <h3>Ana Anabella Anastasia</h3>
+            <p>Me encantó comprar en esta pagina! El Bob Esponja es igualito al de la serie. Es una esponja
+                y se llama BOB
+            </p>
+          </div>
+          <div class="reseña-card">
+            <h3>Carlos Carlos</h3>
+            <p>Patricio llegó más rápido de lo que esperaba. Muy recomendable, lo pedi en su
+                version verde, por suerte llego verde.</p>
+          </div>
+          <div class="reseña-card">
+            <h3>Luis Lopez el Juli Lopez</h3>
+            <p>Excelente atención. La página es medio rara, pero me divertí comprando 2 Patricios.</p>
+          </div>
+          <div class="reseña-card">
+            <h3>xXClienteEnojado123Xx</h3>
+            <p>NO TIENEN A CALAMARDO. Ademas el form no funciona, ademas no me gusta el color violeta, pagina en decadencia, borra la pagina.</p>
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="contacto" class="section">
+        <h2>Formulario de ingreso</h2>
+        <p>UNETE A Nostros. Vende y compra productos UNICOS.</p>
+        <div id=" body-contacto" class="body-section contact">
+          <body>
+  
+              <h3>Llena nuestro FORMULARIO y unete.</h3>
+                <form class ="contacto-formulario" action= "https://formspree.io/f/xblgeagq" method="POST">
+                    
+                    <div class="contacto-form-parte">
+                    <label for="nombre">NOMBRE = </label>
+                    <input type="text"
+                    name="NOMBRE"
+                    id="nombre"
+                    placeholder="Escribe tu nombre aqui">
+                    </div>
+                    
+                    <div class="contacto-form-parte">
+                    <label for="email">EMAIL = </label>
+                    <input type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Escribe tu email aqui">
+                    </div>
+
+                    <div class="contacto-form-parte">
+                    <label for="contrasena">CONTRASEÑA = </label>
+                    <input type="password" name="contrasena" id="contrasena" placeholder="Escribe tu contraseña aqui" required>
+                    </div>
+
+                    <div class="contacto-form-parte">
+                    <textarea name="mensaje" id="mensaje" cols="50" rows="4" placeholder="Escribe tu mensaje TEXTAREA aqui " 
+                    minlength="10" maxlength="100" 
+                    required>Escriba su información aquí...
+                    </textarea> 
+                    </div>
+
+                    <div class="contacto-form-parte">
+                    <button type="submit">ENVIAR!</button>
+                    </div>
+                </form>
+              
+          </body>
+        </div>
+      </div>
+
+  </div>
+
+  <footer>
+    <p>Derechos reservados a Talento tech y los anteojos de Norberto. Arriba hay una barra de navegacion
+        por si no lo viste
+    </p>
+  </footer>
+
+  <!-- JavaScript para mostrar secciones -->
+    <script src="scripts.js"></script> <!-- Enlace al JavaScript -->
+  
+</body>
+</html>

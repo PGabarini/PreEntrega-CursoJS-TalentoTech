@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: pacifico, sans-serif;
+  }
+  /* Encabezado fijo */
+  header {
+    background-color: #4c414c;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* Barra de navegación */
+  nav {
+    background-color: #4d3d4d;
+    margin-top: 60px; /* Compensa la altura del header fijo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  nav ul li {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    
+  }
+  nav ul li:hover, nav ul li.active {
+    background-color: #5c4355;
+  }
+  /* Área de contenido */
+  .contenido {
+    padding: 20px;
+    min-height: 300px;
+  }
+  .section {
+    display: none;
+  }
+  .section.active {
+    display: block;
+  }
+
+/* Contenido de cada seccion */
+  .body-section{
+    position: relative;
+    border-radius: 100px;
+    margin: 30px;
+    
+  }
+
+  /* PRODUCTOS */
+  .productos{
+    padding: 70px;
+    background-color: #c2b0c4; /* Azul claro */
+    font-weight: bold;
+  }
+  
+  .productos-card {
+    display: flex; /* Pone la imagen y la info en línea */
+    align-items: center; /* Alinea verticalmente */
+    background-color: #e4d1e1;
+    border-radius: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 50px;
+    max-width: 1000px; /* Limita el ancho */
+  }
+  
+  .productos-img {
+    width: 200px; /* Tamaño de la imagen */
+    height: 200px;
+    border-radius: 70%; /* Hace la imagen redonda */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+  }
+  
+  .productos-info {
+    
+    flex: 1; /* Ocupa el espacio restante */
+  }
+
+  
+  .inicio{
+    padding: 180px;
+    background-color: #c2b0c4;
+    width: 50%; /* Ajusta el tamaño del contenido (puedes cambiar este valor) */
+    max-width: 800px; /* Define un ancho máximo */
+    right: -550px;
+    top: -30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra ligera */
+  }
+
+
+  /* Pie de página */
+  footer {
+    background-color: #4c414c;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .contacto-formulario {
+     /* Pone la imagen y la info en línea */
+    background-color: #c2b0c4;
+    border-radius: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 50px;
+/* Limita el ancho */
+  }
+
+  .contacto-form-parte {
+    display: flex; 
+    background-color: #e4d1e1;
+    padding: 10px;
+    margin: 50px;
+    max-width: 1000px; 
+  }
+
+  /* Creo que es suficiente para TABLETS Y PC*/
+  @media (min-width: 768px) {
+
+    .contacto-form-parte {
+      flex-direction: row; 
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .contacto-form-parte label {
+      width: 150px;
+    }
+  
+    .contacto-form-parte input,
+    .contacto-form-parte textarea {
+      flex: 1;
+    }
+  }
+
+  .reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .reseña-card {
+    background-color: #f0e6f7;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
